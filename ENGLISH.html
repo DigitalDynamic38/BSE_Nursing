@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(to bottom right,
+                    #450A3B,      
+                    #86125a,
+                    #450A3B);
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+            }
+            .star {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+        @keyframes twinkle {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .h{margin-top: 2cm;
+                font-family:Tahoma;
+                animation: df 2s forwards ease;
+            }
+            @keyframes df {
+                from{transform: scaleX(0.5);}
+                to{transform: scaleX(1);}
+            }
+        .con{
+            position:absolute;
+            left:40%;
+            display: flex;
+            flex-direction:column;
+            gap:16px;
+            font-size: 0.6cm;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation:eee 3s forwards ease-in;
+        }
+        @keyframes eee {
+            0%{opacity:0; transform:scaleY(0.5);}
+            100%{opacity:1; transform:scalex(1);}
+        }
+        .con a{
+             text-decoration: none;
+             color:white;   
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            for (let i = 0; i <90; i++) {
+                let star = document.createElement("div");
+                star.classList.add("star");
+                star.style.left = Math.random() * 100 + "vw";
+                star.style.top = Math.random() * 100 + "vh";
+                star.style.animationDelay = Math.random() * 3 + "s";
+                let size = Math.random() * 3 + 1; // 1px to 4px
+                star.style.width = size + "px";
+                star.style.height = size + "px";
+                document.body.appendChild(star);
+            }
+        </script>
+        <div class="h"> 
+            <p style=" text-align:center;background: linear-gradient(180deg,#E0AA3E,#ded775); -webkit-background-clip:text; -webkit-text-fill-color: transparent; font-weight: bolder; font-size: 1cm;"> English<br>grammar and reference</p>
+        </div>
+        <div class="con">
+            <a href="English-Grammar.pdf">&#9830; Grammar All in one</a>
+            <a href="verbforms.pdf">&#9830; Verb forms</a>
+            <a href="PRECIS-WRITING.pdf">&#9830; Precise Summary</a>
+            <a href="Biographics.pdf">&#9830; Biographical Stories</a>
+        </div>
+    </body>
+</html>

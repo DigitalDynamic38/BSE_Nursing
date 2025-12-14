@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: linear-gradient(to bottom right,
+                    #450A3B,      
+                    #86125a,
+                    #450A3B);
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .h{margin-top: 1cm;
+                font-family:Tahoma;
+                animation: df 2s forwards ease;
+            }
+            @keyframes df {
+                from{transform: scaleX(0.5);}
+                to{transform: scaleX(1);}
+            }
+            .root{
+                /* display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center; */
+                padding:15px;
+                max-width: 1100px;
+                margin:auto;
+            }
+            .card{
+                display: grid;
+                grid-template-columns: 1fr;  
+                gap:18px;
+                overflow-x: auto;
+            }
+            .qt{
+                background:linear-gradient(to top,#E0AA3E 6%,#ded775 6%, #ffffff 0%);
+                background-size: 0% 100%;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                padding: 3px 18px;
+                color:white;
+                border-radius: 16px;
+                box-shadow: 0 9px 25px rgba(0,0,0,0.25);
+                transition:background-size 0.9s ease;
+            }
+            .qt:hover{
+                background-size: 100% 100%;  
+                color:#a47a1e;
+                text-shadow: -2px 3px 5px #a47a1e;
+            }
+            .qt p{
+                font-size: 20px;
+                line-height: 1.6;
+                font-style: italic;
+                margin-bottom:10px;
+            }
+            @media(min-width:600px){
+                .root{
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+            @media(min-width:900px){
+                .root{
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            for (let i = 0; i <90; i++) {
+                let star = document.createElement("div");
+                star.classList.add("star");
+                star.style.left = Math.random() * 100 + "vw";
+                star.style.top = Math.random() * 100 + "vh";
+                star.style.animationDelay = Math.random() * 3 + "s";
+                let size = Math.random() * 3 + 1; // 1px to 4px
+                star.style.width = size + "px";
+                star.style.height = size + "px";
+                document.body.appendChild(star);
+            }
+        </script>
+        <div class="h"> 
+            <p style="background: linear-gradient(180deg,#E0AA3E,#ded775); -webkit-background-clip:text; -webkit-text-fill-color: transparent; font-weight: bolder; font-size: 0.8cm;"> Quote is just lines if you read<br>but it bring something new if you feel it!.. </p>
+        </div>
+        <div class="root">
+            <div class="card">
+                <div class="qt"><p>"Do what is true,not want is easy"</p></div>
+                <div class="qt"><p>"In the word START, there is ART.. How can you get beautiful art without start?..anything starts by start..<br> Your life is an art,.Be an artist of your own life!.."</p></div>
+                <div class="qt"><p>"Without require there is no passion for acquire!.."</p></div>
+                <div class="qt"><p>"Mistake is not a mistake, but repetition of mistake is a real mistake!.. Repetition of mistake spoils the reputation of a person.."</p></div>
+                <div class="qt"><p>"Nature nullifies your nothingness to nurture your future.."</p></div>
+                <div class="qt"><p>"Skill kill ill".. By our skill, we able to kill our ill..</p></div>
+                <div class="qt"><p>"Dwell with Discontentment is not well!.."</p></div>
+                <div class="qt"><p>"Our efforts never fades, but time taken, ..just..await!.."</p></div>
+                <div class="qt"><p>"Expectations are like oxygen, we can't see it but we can live, Reality is like tsunami once it come,destroys all our expectations!.."</p></div>
+                <div class="qt"><p>"We never feel sad about someone words that very much hurts.But definitely we feel bad about that why we give that much of familiarity to them?!</div>
+                <div class="qt"><p>"Fly or Fall is in our hands!.."</p></div>
+                <div class="qt"><p>"Courtesy is costliest component in this complex world. It might be challenging but it's be reciprocate.."</p></div>
+                <div class="qt"><p>"Without knocking a bell, doors didn't open!..Similarly,without today's effort there is no bright tomorrow. So we've to meliorate ourselves in an effective manner.."</p></div>
+                <div class="qt"><p>"Longing with patience is far better that instant gratification!.. Longtime is require to acquire long-lasting things.."</p></div>
+                <div class="qt"><p>"Without autumn there is no spring,..without hope there is no scope!.."</p></div>
+                <div class="qt"><p>"One-hastyword in one-sec causes ♾️ changes"</p></div>
+                <div class="qt"><p>"Nature is not a place to visit,it exists everywhere.. No!no.. We all servive within it. It's like everyone's cynefin."</p></div>
+                <div class="qt"><p>"We all allured by things that's what we lack,no one loves what they have.. Think of those things what we dearth.."</p></div>
+                <div class="qt"><p>"A thing/person,It's speciality is special,It's identity is ideal,It's name also unique,but..That person personality is perfect to you only.. I mean, one that everything to you but nothing to others.. So never wish that your dear will be dear to others!"</p></div>
+                <div class="qt"><p>"Never give a chance to re-entre the feeling of repent,.. We can learn from past but not let it hold us back.."</p></div>
+                <div class="qt"><p>"BEGIN BENIGNITY AT OTHERS.. I think this leads a meaningful and satisfying life!.."</p></div>
+                <div class="qt"><p>"In the word GOOD, indeed there are 2words Go & Do.. If you feel something is good, don't hesitate to do..just proceed.."</p></div>
+                <div class="qt"><p>"Maturity is when you realize that your parents smile & happiness matters..They are there to catch you while you may fall,.<br> They aren't a caregivers,there are beacon of love.."</p></div>
+                <div class="qt"><p>"Choose one consort to sort your feelings and actions..Let them be mirror that reflects your true-self.."</p></div>
+                <div class="qt"><p>"As we simplify our imperfections,we have to amplify our growth.."</p></div>
+                <div class="qt"><p>"Be who you need💓.."</p></div>
+                <div class="qt"><p>"In the grand tapestry of existence, survival is not just a testament to strength, but a symphony of adaptability.."</p></div>
+                <div class="qt"><p>"No matter about a person who besides you at the time of your lights!.. But you have to remember the one who is reason to your light.."</p></div>
+                <div class="qt"><p>"Maybe for so & so reasons, you are away from trying to achieve your goals.But never give up. Because, in the word AWAY there is A-WAY to attempt.."</p></div>
+                <div class="qt"><p>"Being too hasty in making decisions can leads to unforeseen risks and consequences. It's essential to take a thoughtful step..<br> BRISK contains the word RISK.."</p></div>
+                <div class="qt"><p>"Hopes on others are like mirages in our mind from miles.. As we go closen, we found nothing as it is illusion.."</p></div>
+                <div class="qt"><p>"Re-set,Re-adjust,Re-start,Re-focus..As many times as you need to!.."</p></div>
+                <div class="qt"><p>"The act of over-thinking & over-caring can leads to your feeling blue.."</p></div>
+                <div class="qt"><p>"Moon is my utopia,not for it's beauty,but for its unexpectancy of others attention though all being attracted by it.. In accordance, We too never seek attention,.BE A PRESENCE EVEN IN YOUR ABSENCE.."</p></div>
+                <div class="qt"><p>"There are many many ways to grouwth,so  we can choose any.."</p></div>
+                <div class="qt"><p>"In the word REVISION,there is VISION..Lets make revesion a quotidian part of our lives.."</p></div>
+                <div class="qt"><p>"Never thrust anyone to trust you..becoz, if they believe you,no need of seeking validation. If they didn't believe you,no need of explaining yourself..<br>Trust is not a tourism..you are not a tourist too.."</p></div>
+                <div class="qt"><p>"Treat detachments as beyond attachments!.."</p></div>
+                <div class="qt"><p>"FNever let your mind get satisfaction from instant gratification.Just it's a fleeting pleasue but not a long-term whim."</p></div>
+                <div class="qt"><p>"Everything is mystery in this tapestry, until & unless you make those as your learning history.."</p></div>
+                <div class="qt"><p>"Life is a journey of trails and where every mistake is a chance to shine brighter.In every confuse we have to infuse knowledge.."</p></div>
+                <div class="qt"><p>"Being humble is onerous one.."</p></div>
+                <div class="qt"><p>"Don't present your presentiment sense.. Just accept everything as it is.."</p></div>
+                <div class="qt"><p>"Spectate...then inspect.. Avoid confining anything by your personal speculation.."</p></div>
+                <div class="qt"><p>"The complacency come from the reciprocity of deferential is an exceptional level.."</p></div>
+                <div class="qt"><p>"Life is a race, We must face and embrace, inorder to trace and finally get grace.."</p></div>
+                <div class="qt"><p>"Create your euphoria through your eunoia.."</p></div>
+                <div class="qt"><p>"To the world, Fashion is always in flux,but make your passion is your fixed fashion.."</p></div>
+                <div class="qt"><p>"Being great is always superior than becoming great.. When you're great,everyone will greet & meet!.."</p></div>
+                <div class="qt"><p>"Don't let your thoughts to drag you down,just as gravity which drag things down!..</p></div>
+                <div class="qt"><p>"Train your brain to gain!.."</p></div>
+                <div class="qt"><p>"Don't try to find answer.Because when you find the answer.. life changes the question!.."</p></div>
+                <div class="qt"><p>"The worst feeling is diving into your worst moment again!..></div>
+                <div class="qt"><p>"The air castles you build with ostentations behaviour will crumble oneday!.. Think!.. Is it truly necessary for you?? It creates an illusion of grandeur, but ultimately fragile.."</p></div>
+                <div class="qt"><p>"Bitter bites to make you better!.."</p></div>
+                <div class="qt"><p>"In the word DEPEND there is END.. Never let your effort,creativity & logical thinking to end up by rely solely on others!..<br> End depend to ascend your comprehend!.."</p></div>
+                <div class="qt" style="background: linear-gradient(90deg,#E0AA3E,#ded775); -webkit-background-clip:text; -webkit-text-fill-color: transparent;"><p> ~Kalpana Jami..</p></div>
+            </div>
+        </div>
+    </body>
+</html>
